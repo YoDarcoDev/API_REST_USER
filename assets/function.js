@@ -10,7 +10,7 @@ exports.success = function(result) {
 exports.error = function(message) {
     return {
         statut: 'error',
-        result: message
+        message: message
     }
 }
 
@@ -29,3 +29,4 @@ exports.checkAndChange = (obj) => {
         return this.success(obj)
     }
 }
+
